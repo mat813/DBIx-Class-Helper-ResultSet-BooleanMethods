@@ -4,7 +4,7 @@ use 5.008;
 use utf8;
 use strictures 2;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ DBIx::Class::Helper::ResultSet::BooleanMethods - Automatically create search met
 
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
@@ -26,6 +26,8 @@ sub make_variant {
 
 	my $columns_info = $result->result_source_instance->columns_info;
 
+	$resultset->load_components('Helper::ResultSet::Me');
+
 	while (my ($method, $detail) = each %{$columns_info}) {
 		if ('boolean' ne $detail->{'data_type'}) {
 			next;
@@ -36,7 +38,7 @@ sub make_variant {
 
 			return $self->search(
 				{
-					$method => 'true',
+					$self->me($method) => 'true'
 				}
 			);
 		};
@@ -46,7 +48,7 @@ sub make_variant {
 
 			return $self->search(
 				{
-					$method => 'false',
+					$self->me($method) => 'false'
 				}
 			);
 		};

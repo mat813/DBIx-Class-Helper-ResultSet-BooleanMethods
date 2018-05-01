@@ -17,8 +17,9 @@ my %args = (
 		'Test::More' => '0',
 	},
 	'PREREQ_PM' => {
-		'Package::Variant' => '1.003',
-		'Role::Tiny'       => '2.0',
+		'Package::Variant'                   => '1.003',
+		'Role::Tiny'                         => '2.0',
+		'DBIx::Class::Helper::ResultSet::Me' => '2.033',
 	},
 	'dist' => {
 		'COMPRESS' => 'gzip -9f',
