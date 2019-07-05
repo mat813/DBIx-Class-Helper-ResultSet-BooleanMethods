@@ -28,6 +28,18 @@ my %args = (
 	'clean' => {
 		'FILES' => 'DBIx-Class-Helper-ResultSet-BooleanMethods-*',
 	},
+	'META_MERGE' => {
+		'meta-spec' => {
+			'version' => 2,
+		},
+		'resources' => {
+			'repository' => {
+				'type' => 'git',
+				'url'  => 'https://github.com/mat813/DBIx-Class-Helper-ResultSet-BooleanMethods.git',
+				'web'  => 'https://github.com/mat813/DBIx-Class-Helper-ResultSet-BooleanMethods',
+			},
+		},
+	},
 );
 
 WriteMakefile(%args);
