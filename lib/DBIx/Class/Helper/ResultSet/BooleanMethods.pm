@@ -118,10 +118,6 @@ You can also look for information at:
 
 L<https://rt.cpan.org/NoAuth/Bugs.html?Dist=DBIx-Class-Helper-ResultSet-BooleanMethods>
 
-=item * AnnoCPAN: Annotated CPAN documentation
-
-L<http://annocpan.org/dist/DBIx-Class-Helper-ResultSet-BooleanMethods>
-
 =item * CPAN Ratings
 
 L<https://cpanratings.perl.org/d/DBIx-Class-Helper-ResultSet-BooleanMethods>
