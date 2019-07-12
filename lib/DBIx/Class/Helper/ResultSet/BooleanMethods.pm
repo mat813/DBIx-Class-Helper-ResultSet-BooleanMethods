@@ -4,7 +4,7 @@ use 5.008;
 use utf8;
 use strictures 2;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -12,7 +12,7 @@ DBIx::Class::Helper::ResultSet::BooleanMethods - Automatically create search met
 
 =head1 VERSION
 
-Version 0.03
+Version 0.04
 
 =cut
 
