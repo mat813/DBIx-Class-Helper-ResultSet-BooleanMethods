@@ -89,7 +89,7 @@ Say your table has a boolean column named "paid", using this role will act as if
     
     	return $self->search(
     		{
-    			'not_paid' => 'false',
+    			'paid' => 'false',
     		}
     	);
     };
